@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/birds_styles.css" />
+
+<title>Paradigm Pet Professionals</title>
+</head>
+
+<body>
+
+<header>
+	<img class = "logo" src = "../images/logo.png" />
+	
+<div class="navbar" id = "resNavbar">
+  <a href="home.html">Home</a>
+  <a href="consultation.html">Consultation</a>
+  <div class="dropdown">
+    <button class="dropbtn">Pets and Wellness &#9660;</button>
+    <div class="dropdown-content">
+      <a href="cats.html">Cats</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="birds.html">Birds</a>
+    </div>
+  </div> 
+  <a href="about_us.html">About Us</a>
+  
+  <a href="javascript:void(0);" onclick="resNavbarFunction()" class="icon">&#9776;</a>
+  <input type="text" placeholder="Search.." class = "searchField">
+  <button class = "search">Fetch</button>
+  
+  
+</div>
+	 
+</header
+><main>
+	<section class = "introduction">
+	<div class="breadcrumbs">
+	 <p> <a href="home.html">Home</a> |<a href="birds.html">Birds</a></p>
+	</div>	 
+
+	 <h1>Birds</h1> 
+	 
+	 <div class="row">
+		
+		<div class = "imgCol">		
+		  <img src="../images/cockatiel.jpg" style="max-width:100%; ">
+		</div>
+		
+		<div class = "imgCol">
+		  <img  src="../images/cat_bird.jpg" style="max-width:100%; ">
+		</div>
+		
+	</div> 
+	
+</section>	 
+
+<script>
+
+function resNavbarFunction(){
+  var x = document.getElementById("resNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+</script>
+
+<section class = "genInfo">
+<h2>Learn About Your Amazing Bird</h2>
+
+<p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long
+and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing
+and each breed is unique in its own way, particularly when it comes to their relational needs and well-being. Unfortunately, birds
+can experience sadness and depression just like humans. A number of root causes may be responsible for your bird's depression such
+as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs to help identify if your
+bird is experiencing depression may include the following:</p>
+<ul  style="list-style-type:disc">
+	<li>&#x2022; reduced appetite</li>
+	<li>&#x2022; becoming increasingly irritable</li>
+	<li>&#x2022; aggressive behavior</li>
+	<li>&#x2022; songs have a different, more solemn tone</li>
+</ul>
+
+<p>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the
+symptoms earlier may drastically increase the lifespan of your birdie.</p>
+
+</section>
+</main>
+<footer>
+<p>Paradigm Pet Professionals &copy;
+<i style = "color:white;">Evidence-based pet care advice for every pet lover</i></p>
+</footer>
+
+</body>
+</html>

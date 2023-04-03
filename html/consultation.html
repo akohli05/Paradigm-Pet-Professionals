@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/consult_styles.css" />
+
+<title>Paradigm Pet Professionals</title>
+</head>
+
+<body>
+
+<header>
+	<img src = "../images/logo.png" />
+	
+<div class="navbar" id = "resNavbar">
+  <a href="home.html">Home</a>
+  <a href="consultation.html">Consultation</a>
+  <div class="dropdown">
+    <button class="dropbtn">Pets and Wellness &#9660;</button>
+    <div class="dropdown-content">
+      <a href="cats.html">Cats</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="birds.html">Birds</a>
+    </div>
+  </div> 
+  <a href="about_us.html">About Us</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="resNavbarFunction()">&#9776;</a>
+  <input type="text" placeholder="Search.." class = "searchField">
+  <button class = "search">Fetch</button>
+  
+  
+</div>
+<script>
+
+function resNavbarFunction() {
+  var x = document.getElementById("resNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+</script>
+</header
+><main>
+	
+		
+	<section class = "genInfo">
+	 
+	<div class="breadcrumbs">
+	 <p> <a href="home.html">Home</a> |<a href="consultation.html">Consultation</a> </p>
+	</div><br>
+	
+	 <h1>Pexperts Consultation</h1> 
+	 
+
+<p class = "consultInfo">
+Have additional questions about your pet? Fear not! Fill out the form below and chat with our pet experts to
+receive the best advice for your pet.<br>
+Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, 
+and customer recognition for outstanding support.<br>
+Our services include virtual consultations and presentations, one-on-one consultations concerning individual pets,and group presentations
+regarding general pet care (can be tailored to the needs of the group).
+
+</p>
+
+<form action="">
+	<fieldset>
+  <legend style="margin:0 auto;">Consultation Form</legend> <br>
+	
+		<label for="fname">*Full Name:</label>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="phone">*Phone:</label>
+		<input type="text" id="phone" name="phone"><br>
+		<label for="email">*Email:</label>
+		<input type="text" id="email" name="email"><br>
+		<label for="tzone">*Time Zone:</label>
+		<input type="text" id="tzone" name="tzone"><br>
+
+		<label for="pname">*Pet's Name:</label>
+		<input type="text" id="pname" name="pname"><br>
+		<label for="petType">*Type of Pet:</label>
+		<input type="text" id="petType" name="petType"><br>
+		<label for="petAge">*Pet's Age:</label>
+		<input type="text" id="petAge" name="petAge"><br><br>
+
+		<input type="submit" value="Submit">
+  
+  </fieldset>
+</form> 
+
+</section>
+</main>
+<footer>
+<p>Paradigm Pet Professionals &copy;
+<i style = "color:white;">Evidence-based pet care advice for every pet lover</i></p>
+</footer>
+
+</body>
+</html>

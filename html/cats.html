@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/cats_styles.css" />
+
+<title>Paradigm Pet Professionals</title>
+</head>
+
+<body>
+
+<header>
+	<img src = "../images/logo.png" />
+	
+<div class="navbar" id = "resNavbar">
+  <a href="home.html">Home</a>
+  <a href="consultation.html">Consultation</a>
+  <div class="dropdown">
+    <button class="dropbtn">Pets and Wellness &#9660;</button>
+    <div class="dropdown-content">
+      <a href="cats.html">Cats</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="birds.html">Birds</a>
+    </div>
+  </div> 
+  <a href="about_us.html">About Us</a>
+  
+  <a href="javascript:void(0);" onclick="resNavbarFunction()" class="icon">&#9776;</a>
+  <input type="text" placeholder="Search.." class = "searchField">
+  <button class = "search">Fetch</button>
+  
+  
+</div>
+	 
+</header
+><main>
+	<section class = "introduction">
+	<div class="breadcrumbs">
+	 <p> <a href="home.html">Home</a> | <a href="cats.html">Cats</a></p>
+	</div>	 
+
+	 <h1>Cats</h1> 
+	 
+	 <div class="row">
+		
+		<div class = "imgCol">		
+		  <img class= "catImg1" src="../images/cat1.jpg" style="max-width:100%; ">
+		</div>
+		
+		<div class = "imgCol">
+		  <img class= "catImg2" src="../images/cat2.jpg" style="max-width:100%; ">
+		</div>
+		
+	</div> 
+	
+<p style="text-align:center">
+Cats were first domesticated around 7500 BCE in the western Asia region and are currently the second most popular domestic
+pet in the United States. While there are over 60 unique documented cat breeds, care and diet can differ between breeds.
+However, some diets and practices are generally recommended for the well-being of your fluffy family member regardless 
+of breed.
+</p>
+</section>	 
+
+<script>
+
+function resNavbarFunction(){
+  var x = document.getElementById("resNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+</script>
+
+<section class = "genInfo">
+<h2>Feeding Your Furry Little Friend</h2>
+
+<h3>Zero to Four Weeks</h3>
+<p>It is important the queen (a term commonly used for a female cat that is either pregnant or nursing) directly nurse her young if 
+possible. Monitor your kitten’s growth closely to make sure its growth rate is progressing steadily. If any kitten is not growing at
+a sufficient rate, a caretaker might need to feed the kitten directly either with a bottle or a feeding tube. Some reasons why kittens
+might not gain weight appropriately include the following:</p>
+<ul  style="list-style-type:disc">
+	<li>&#x2022; too many other siblings are competing for mom's milk</li>
+	<li>&#x2022; gastrointestinal disease</li>
+	<li>&#x2022; environmental conditions such as extreme heat or cold, or unsanitary conditions</li>
+</ul>
+
+<h3>Four Weeks to One Year</h3>
+<p>Kittens can start being introduced to soft wet kitten food typically around three to four weeks after birth. According to the <a href="https://www.aspca.org/pet-care/cat-care/cat-nutrition-tips">ASPCA</a>,
+kittens at this age should eat half to one cup of dry kitten food or sixto nine ounces of wet kitten food per day. If your kitten has
+difficulties eating hard food, a small amount of water can be added to soften the food. Cat food that is optimized for kittens provides
+the additional nutrients that are needed for growth, energy, and wellness. Depending on the breed, your cat may have different dietary
+requirements. You should always consult with your veterinarian for recommendations.</p>
+
+<h3>One Year to Seven Years</h3>
+<p>This age is when kittens reach the cat stage and do not need as many nutrients. At this age, their level of activity decreases, and so
+does their metabolism. It is not recommended to leave food out for the cats all day. Instead, provide food a couple times a day so they
+eat meals rather than snacking throughout the day. This practice reduces the risk of obesity and other weight-related feline ailments.</p>
+
+<h3>Seven Years and More</h3>
+<p>Much like many living organisms, the body begins to deteriorate and experience a lot of changes. Cats at this age should eat less fats
+and calories and more quality proteins. This means when you are purchasing packaged foods for your cat, look for food that states a 
+particular protein (such as "salmon") and not just a category (such as fish). This usually means they are byproducts, or combinations, of
+lesser quality proteins.</p>
+
+</section>
+</main>
+<footer>
+<p>Paradigm Pet Professionals &copy;
+<i style = "color:white;">Evidence-based pet care advice for every pet lover</i></p>
+</footer>
+
+</body>
+</html>

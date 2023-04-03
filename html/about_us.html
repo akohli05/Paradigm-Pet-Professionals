@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/about_us_styles.css" />
+
+<title>Paradigm Pet Professionals</title>
+</head>
+
+<body>
+
+<header>
+	<img class = "logo" src = "../images/logo.png" />
+	
+<div class="navbar" id = "resNavbar">
+  <a href="home.html">Home</a>
+  <a href="consultation.html">Consultation</a>
+  <div class="dropdown">
+    <button class="dropbtn">Pets and Wellness &#9660;</button>
+    <div class="dropdown-content">
+      <a href="cats.html">Cats</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="birds.html">Birds</a>
+    </div>
+  </div> 
+  <a href="about_us.html">About Us</a>
+  
+  <a href="javascript:void(0);" onclick="resNavbarFunction()" class="icon">&#9776;</a>
+  <input type="text" placeholder="Search.." class = "searchField">
+  <button class = "search">Fetch</button>
+  
+  
+</div>
+	 
+</header
+><main>
+	<section class = "introduction">
+	<div class="breadcrumbs">
+	 <p> <a href="home.html">Home</a> |<a href="about_us.html">About Us</a></p>
+	</div>	 
+
+	 <h1>About Us</h1> 
+	 
+	 <div class="row">
+		
+		<div class = "imgCol">		
+		  <img src="../images/office1.jpg" style="max-width:100%; ">
+		</div>
+		
+		<div class = "imgCol">
+		  <img  src="../images/office2.jpg" style="max-width:100%; ">
+		</div>
+		
+	</div> 
+	
+</section>	 
+
+<script>
+
+function resNavbarFunction(){
+  var x = document.getElementById("resNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+</script>
+
+<section class = "genInfo">
+<h2>Paradigm Pet Professionals</h2>
+<p style = "text-align:center;"><i>Evidence-based pet care advice for every pet lover</i></p><br>
+
+<p>Paradigm Pet Professionals has 12 years’ experience working with pet owners, certifications in pet health and nutrition, and
+customer recognition for outstanding support. Our services include virtual consultations and presentations, one-on-one consultations
+concerning individual pets, group presentations regarding general pet care (can be tailored to the needs of the group).
+</p>
+
+<p>Contact Us!
+Email: petSupremacy@example.com
+Phone: 899-300-1177</p>
+
+</section>
+</main>
+<footer>
+<p>Paradigm Pet Professionals &copy;
+<i style = "color:white;">Evidence-based pet care advice for every pet lover</i></p>
+</footer>
+
+</body>
+</html>

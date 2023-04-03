@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/home_styles.css" />
+
+<title>Paradigm Pet Professionals</title>
+</head>
+
+<body>
+
+<header>
+	<img src = "../images/logo.png" />
+	
+<div class="navbar" id = "resNavbar">
+  <a href="home.html">Home</a>
+  <a href="consultation.html">Consultation</a>
+  <div class="dropdown">
+    <button class="dropbtn">Pets and Wellness &#9660;</button>
+    <div class="dropdown-content">
+      <a href="cats.html">Cats</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="birds.html">Birds</a>
+    </div>
+  </div> 
+  <a href="about_us.html">About Us</a>
+  
+  <a href="javascript:void(0);" onclick="resNavbarFunction()" class="icon">&#9776;</a>
+  <input type="text" placeholder="Search.." class = "searchField">
+  <button class = "search">Fetch</button>
+  
+  
+</div>
+	 
+</header
+><main>
+	<section class = "introduction">
+	<div class="breadcrumbs">
+	 <p> <a href="home.html">Home</a> |</p>
+	</div>	 
+
+	 <h1>Welcome Animal Lovers!</h1> 
+	 
+	 <div class="slideshow">
+
+		<div class="mySlides">
+		  <img src="../images/cat3.jpg" style="max-width:70%">
+		</div>
+
+		<div class="mySlides">
+		  <img src="../images/office1.jpg" style="max-width:70%">
+		</div>
+
+		<div class="mySlides">
+		  <img src="../images/cat5.jpg" style="max-width:70%">
+		</div>
+		
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+		
+	</div>
+</section>	 
+
+<script>
+
+function resNavbarFunction(){
+  var x = document.getElementById("resNavbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+} 
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let mySlides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < mySlides.length; i++) {
+    mySlides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > mySlides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  mySlides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+<section class = "genInfo">
+<p>
+Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity
+and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources
+to help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or “Pexperts”—have been working with pet owners and
+professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group
+presentations designed for veterinary, pet shelter, and pet breeding professionals.
+
+Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and
+your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion. 
+
+Looking for your new best friend? The following organizations can help you find and adopt the perfect companion:
+</p>
+
+<ul  style="list-style-type:disc">
+	<li><a href="https://theshelterpetproject.org/">General Adoption Resources</a></li>
+	<li><a href = "https://www.aspca.org/">ASPCA</a></li>
+	<li><a href = "https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">Fish Rescue</a></li>
+	<li><a href = "https://savethesnakes.org/snakerescuecall/">Snake Rescue</a></li>
+	<li><a href = "https://ftlob.rescuegroups.org/">Bird Rescue</a></li>
+</ul>
+
+<p>
+We are also happy to help you navigate the adoption process! We will guide you through each step in the process
+from determining which type of pet is best suited for your family and home environment, to completing the necessary
+paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will
+contact you within 48 hours to schedule a consultation. All fields are required.
+
+</p>
+
+</section>
+</main>
+<footer>
+<p>Paradigm Pet Professionals &copy;
+<i style = "color:white;">Evidence-based pet care advice for every pet lover</i></p>
+</footer>
+
+</body>
+</html>
